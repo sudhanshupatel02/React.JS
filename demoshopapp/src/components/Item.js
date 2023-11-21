@@ -1,7 +1,8 @@
 import './Item.css'
 
 function Item(){
-   return(<p className ='btn' >Pinko</p>);
+   const itemName ='RamRam';
+   return(<p className ='btn' >{itemName}</p>);
 }
 
 export default Item;
