@@ -2,7 +2,9 @@ import './Item.css'
 
 function Item(props){
    const itemName = props.name;
-   return(<p className ='btn' >{itemName}</p>);
+   return(<div>
+      <p className ='btn' >{itemName}</p> {props.children}
+   </div>);
 }
 
 export default Item;
