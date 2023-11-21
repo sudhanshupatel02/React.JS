@@ -1,7 +1,7 @@
 import './Item.css'
 
-function Item(){
-   const itemName ='RamRam';
+function Item(props){
+   const itemName = props.name;
    return(<p className ='btn' >{itemName}</p>);
 }
 

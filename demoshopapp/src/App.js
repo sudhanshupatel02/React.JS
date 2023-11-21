@@ -5,14 +5,14 @@ import ItemDate from './components/ItemDate';
 function App() {
   return (
    <div>
-     <Item></Item>
-    <ItemDate></ItemDate>
+     <Item name = 'HareRam'></Item>
+    <ItemDate day = '09' month = ' May ' year = '2000'></ItemDate>
 
-     <Item></Item>
-    <ItemDate></ItemDate>
-    
-     <Item></Item>
-    <ItemDate></ItemDate>
+     <Item name = 'HareKrishan'></Item>
+    <ItemDate day = '20' month = ' june ' year = '2005'></ItemDate>
+
+     <Item name = 'RamRam'></Item>
+    <ItemDate day = '23' month = ' Septembar ' year = '2020'></ItemDate>
     <div className="App"> Hello world</div>
    </div>
    
