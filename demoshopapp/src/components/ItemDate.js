@@ -1,10 +1,14 @@
 import './ItemDate.css';
 
 function ItemDate(){
+    const day = 20;
+    const month = ' june ';
+    const year = 2000;
+
    return (<div className='date'>
-       <span>02</span>
-       <span>Feb</span>
-       <span>1997</span>
+       <span> {day} </span>
+       <span> {month} </span>
+       <span> {year} </span>
    </div>);
 
 }
