@@ -14,7 +14,8 @@ const App = () => {
       id: 'p2', 
       title: 'Sirf Excel', 
       amount: 200, 
-      date: new Date(2021, 2, 2) },
+      date: new Date(2021, 2, 2) 
+    },
     {
       id: 'p3',
       title: 'Tide',

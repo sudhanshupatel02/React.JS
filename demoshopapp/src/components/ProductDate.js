@@ -9,7 +9,7 @@ const ProductDate = (props) => {
 
   return (
     <div className='product-date'>
-      <div className='product-date__month'>{month}</div>
+      <div className='product-date__month'>{month}</div> 
       <div className='product-date__year'>{year}</div>
       <div className='product-date__day'>{day}</div>
     </div>
