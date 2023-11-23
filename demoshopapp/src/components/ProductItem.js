@@ -10,7 +10,7 @@ const ProductItem = (props) => {
 
    function clickHandler(){
     // title = 'Papcon'; onclick karne se tital nhi change ho to ham yaha use karte hai [state] ko 
-    setTitle('  Popcons'); // yah shi hai
+    setTitle('Popcons'); // yah shi hai
     console.log('button clicked');
    }
 
