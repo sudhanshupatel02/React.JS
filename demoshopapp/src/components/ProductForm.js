@@ -8,15 +8,27 @@ function ProductForm(props) {
 
     function titleChangeHandler(event) {
         setTitle(event.target.value);
-        console.log(event.target.value);
+        //console.log(event.target.value);
     }
     function dateChangeHandler(event) {
         setDate(event.target.value);
-        console.log(event.target.value);
+        //console.log(event.target.value);
     }
 
 
-    return (<form>
+    function submitHandler(event) {
+        event.preventDefault();
+
+        const productData = {
+            title:newTitle,
+            date:newDate
+        };
+
+        console.log(productData);
+       
+    }
+
+    return (<form onSubmit={submitHandler}>
     <div className='new-product_controls'>
         <div className='new-product_control'>
             <label>Title</label>
