@@ -1,11 +1,17 @@
+import { useState } from 'react';
 import './ProductForm'
 
 function ProductForm() {
 
+    function titleChangeHandler(){
+        console.log('Title changr karoge')
+    }
+
     return (<form>
+    <div className='new-product_controls'>
         <div className='new-product_control'>
             <label>Title</label>
-            <input type='text'></input>
+            <input type='text' onChange={titleChangeHandler}></input>
         </div>
         <div className='new-product_control'>
             <label>Date</label>
@@ -14,6 +20,7 @@ function ProductForm() {
         <div className='new-product_button'>
             <button type='submit'>Add Product</button>
         </div>
+    </div>
 
     </form>)
 }
