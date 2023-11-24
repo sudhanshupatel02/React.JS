@@ -14,8 +14,8 @@ const Tours = (props) => {
             </div>
             <div className='cards'>
                 {
-                    props.tours.map((tour) => {
-                        return <Card {...tour} key={tour.id} removeTour={removeHandler} />;
+                    props.tours.map((tour) => {  //! aap jabhi kisi list ke uper map() chala rahe hai ho appa ho waha hame sha key pass karni chahiye    
+                        return <Card {...tour} key={tour.id} removeTour={removeHandler} />;  //! koi bhi unick identified nhi hai to waha index pass kar sakte hai
                     })
                 }
             </div>
