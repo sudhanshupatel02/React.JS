@@ -7,12 +7,19 @@ function App() {
 
   function changeHandler(event) {
     setText(event.target.value);
+    console.log(text);
   }
 
   // Variation1 - Every Render 
+  // useEffect(() => {
+  //   console.log("UI Renderer changed")
+  // });
+
+  // Variation2 - First Render
   useEffect(() => {
-    console.log("UI Renderer changed")
-  });
+    console.log("UI Renderer changed");
+  },[]);
+
  
 
   return (
