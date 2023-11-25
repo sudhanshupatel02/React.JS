@@ -6,8 +6,8 @@ function App() {
   const [text, setText] = useState('')
 
   function changeHandler(event) {
+    setText(event.target.valu)
     console.log(text)
-    setText(event.target.value)
   }
 
   return (
