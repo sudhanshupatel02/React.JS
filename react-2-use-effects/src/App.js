@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css';
 
 
@@ -6,9 +6,14 @@ function App() {
   const [text, setText] = useState('')
 
   function changeHandler(event) {
-    setText(event.target.valu)
-    console.log(text)
+    setText(event.target.value);
   }
+
+  // Variation1 - Every Render 
+  useEffect(() => {
+    console.log("UI Renderer changed")
+  });
+ 
 
   return (
     <div className="App">
