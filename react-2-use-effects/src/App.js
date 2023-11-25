@@ -4,7 +4,6 @@ import './App.css';
 
 function App() {
   const [text, setText] = useState('')
-  const [name, setName] = useState('Pinkoo')
 
   function changeHandler(event) {
     setText(event.target.value);
@@ -22,9 +21,19 @@ function App() {
   // },[]);
 
   // Variation3 - On First Render + Whenever Dependencies CHanges
+  // useEffect(() => {
+  //   console.log("UI Renderer changed");
+  // }, [text]);
+
+  
+
+  // Variation4 - To Handler Unmounting of Component  
   useEffect(() => {
-    console.log("UI Renderer changed");
-  }, [name]);
+    console.log("Added"); //Bad me yah
+    return () => {
+      console.log("Removed");  // pahle yah run ho  
+    }
+  }, [text]);
 
   return (
     <div className="App">
