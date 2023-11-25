@@ -16,11 +16,14 @@ function App() {
   // });
 
   // Variation2 - First Render
+  // useEffect(() => {
+  //   console.log("UI Renderer changed");
+  // },[]);
+
+  // Variation3 - On First Render + Whenever Dependencies CHanges
   useEffect(() => {
     console.log("UI Renderer changed");
-  },[]);
-
- 
+  }, [text]);
 
   return (
     <div className="App">
