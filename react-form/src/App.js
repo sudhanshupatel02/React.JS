@@ -20,8 +20,9 @@ function App() {
   //   setLastName(event.target.value)
   // } 
 
-  const[formData, setFormDate] = useState( {firstName: "", lastName: "", email: ""})
+  const[formData, setFormDate] = useState( {firstName: "", lastName: "", email: "", comments: ""})
 
+  console.log(formData)
   function changeHandler(event) {
     setFormDate(prevFormDate => {
       return{
@@ -55,6 +56,7 @@ function App() {
         />
 
         <br/>
+        <br/>
 
         <input 
         type="email" 
@@ -62,6 +64,14 @@ function App() {
         onChange={changeHandler}
         name="email"
         value={formData.email}
+        />
+        
+        <br/><br/>
+        <textarea
+         placeholder="Enter Your email address"
+         onChange={changeHandler}
+         name="comments"
+         value={formData.comments}
         />
 
        </form>
