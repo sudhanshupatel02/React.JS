@@ -22,7 +22,7 @@ function App() {
 
   const[formData, setFormDate] = useState( {firstName: "", lastName: "", email: "", comments: "", isVisible: true, mode:"", favCar:"" })
 
-  console.log(formData)
+  // console.log(formData)
 
   function changeHandler(event) {
     const {name, value, checked, type} = event.target
@@ -34,10 +34,17 @@ function App() {
     });
   }
 
+   function submitHandler(event){
+     event.preventDefault();
+    //  print
+    console.log("Finally prigting the entireform ka data ........")
+    console.log(formData)
+   }
+
   return (
     <div className="App">
-       <form>
-
+       <form onSubmit={submitHandler}>
+        
         <input 
         type="text" 
         placeholder="first name"
@@ -130,6 +137,11 @@ function App() {
            <option value="mahindra">Mahindra</option>
            <option value="forari">Forari</option>
         </select>
+
+        {/* <input type="submit" value='submit'/> */}
+        <br/>
+        <br/>
+        <button>Submit</button>
 
        </form>
     </div>
