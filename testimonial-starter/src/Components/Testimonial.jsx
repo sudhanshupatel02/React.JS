@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Card from "./Card";
-import { FiChevronLeft } from "react-icons/fi";
-import { FiChevronRight } from "react-icons/fi";
+import { FiChevronLeft , FiChevronRight } from "react-icons/fi";
 
 const Testimonial = (props) => {
   let reviews = props.reviews;
