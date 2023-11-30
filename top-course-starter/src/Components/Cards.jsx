@@ -32,6 +32,7 @@ const Cards = (props) => {
         }
         else
         {
+            //Main sirf specific categiry ka data array karunga
             return props.courses[category];
         }
     }

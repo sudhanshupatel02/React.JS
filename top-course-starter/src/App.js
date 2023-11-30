@@ -11,7 +11,7 @@ const App = () => {
   // const [courses, setCourses] = useState(null);
   const [courses, setCourses] = useState([]);
   const [laoding, setLoading] = useState(true);
-  const [category, setCategory] = useState([]);
+  const [category, setCategory] = useState(filterData[0].title);
 
   const fetchData = async () => {
     setLoading(true);
