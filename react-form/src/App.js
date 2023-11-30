@@ -40,6 +40,7 @@ function App() {
         placeholder="first name"
         onChange={changeHandler}
         name="firstName"
+        value={formData.firstName}
         />
 
         <br/>
@@ -50,6 +51,7 @@ function App() {
         placeholder="first name"
         onChange={changeHandler}
         name="lastName"
+        value={formData.lastName}
         />
 
         <br/>
@@ -59,6 +61,7 @@ function App() {
         placeholder="Enter Your email address"
         onChange={changeHandler}
         name="email"
+        value={formData.email}
         />
 
        </form>
