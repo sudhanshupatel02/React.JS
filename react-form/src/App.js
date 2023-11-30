@@ -20,14 +20,16 @@ function App() {
   //   setLastName(event.target.value)
   // } 
 
-  const[formData, setFormDate] = useState( {firstName: "", lastName: "", email: "", comments: ""})
+  const[formData, setFormDate] = useState( {firstName: "", lastName: "", email: "", comments: "", isVisible: true })
 
   console.log(formData)
+
   function changeHandler(event) {
+    const {name, value, checked, type} = event.target
     setFormDate(prevFormDate => {
       return{
         ...prevFormDate,
-        [event.target.name] : event.target.value
+        [name] : type ==="checkbox" ? checked : value
       }
     });
   }
@@ -66,13 +68,27 @@ function App() {
         value={formData.email}
         />
         
-        <br/><br/>
+        <br/>
+        <br/>
+
         <textarea
          placeholder="Enter Your email address"
          onChange={changeHandler}
          name="comments"
          value={formData.comments}
         />
+
+       <br/>
+       <br/>
+
+       <input 
+        type="checkbox" 
+        onChange={changeHandler}
+        name="isVisible"
+        id="isVisible"
+        checked={formData.isVisible}
+        />
+        <label htmlFor="isVisible">Am I visible ?</label>
 
        </form>
     </div>
