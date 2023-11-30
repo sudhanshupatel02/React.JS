@@ -20,7 +20,7 @@ function App() {
   //   setLastName(event.target.value)
   // } 
 
-  const[formData, setFormDate] = useState( {firstName: "", lastName: "", email: "", comments: "", isVisible: true, mode:"" })
+  const[formData, setFormDate] = useState( {firstName: "", lastName: "", email: "", comments: "", isVisible: true, mode:"", favCar:"" })
 
   console.log(formData)
 
@@ -91,9 +91,11 @@ function App() {
         <label htmlFor="isVisible">Am I visible ?</label>
 
         <br/>
-       <br/>
+        <br/>
 
-       <input 
+        <fieldset>
+          <legend>Mode</legend>
+          <input 
         type="radio" 
         onChange={changeHandler}
         name="mode"
@@ -112,6 +114,22 @@ function App() {
         checked={formData.mode === "Online-Mode"}
         />
         <label htmlFor="offline-Mode">offline-Mode</label>
+        </fieldset>
+
+        <label htmlFor="favCar">Tell me your Favourite Car </label>
+        <select
+          onChange={changeHandler}
+          name="favCar"
+          id="favCar"
+          value={formData.favCar}
+        >
+           <option value="tata">Tata</option>
+           <option value="thor">Thor</option>
+           <option value="scorpio">Scorpio</option>
+           <option value="rolsRoyel">RolsRoyel</option>
+           <option value="mahindra">Mahindra</option>
+           <option value="forari">Forari</option>
+        </select>
 
        </form>
     </div>
