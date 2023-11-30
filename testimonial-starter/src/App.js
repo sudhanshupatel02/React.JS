@@ -8,7 +8,7 @@ const App = () => {
       <div className="text-center">
         <h1 className="text-4xl font-bold">Our Testimonial</h1>
         <div className="bg-violet-400 h-[4px] w-1/5 mt-1 mx-auto"></div>
-        <Testimonial />
+        <Testimonial reviews = {reviews}/>
       </div>
     </div>
   );
