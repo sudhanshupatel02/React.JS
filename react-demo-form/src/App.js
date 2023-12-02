@@ -203,6 +203,11 @@ function App() {
           />
           <label htmlFor="pushNothing">No Push Notification</label>
         </fieldset>
+
+        <button 
+         className="bg-blue-500 text-white font-bold rounded py-2 px-4">
+          Save
+        </button>
       </form>
     </div>
   );
