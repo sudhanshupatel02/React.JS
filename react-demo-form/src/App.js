@@ -11,9 +11,16 @@ function App() {
     });
   }
 
+  function submitHandler(event){
+    event.preventDefault();
+
+    console.log("Finally printing the value of form data")
+    console.log(formData)
+  }
+
   return (
     <div className="flex flex-col items-center mt-2">
-      <form>
+      <form onSubmit={submitHandler}>
         <label htmlFor="firstName">First Name</label>
         <br />
         <input
@@ -53,12 +60,11 @@ function App() {
         />
 
         <br />
-        <label htmlFor="country">Country</label>
+        <label htmlFor="country">country</label>
         <br />
         <select
           name="country"
           id="country"
-          country
           value={formData.country}
           onChange={changeHandler}
           className="outline"
