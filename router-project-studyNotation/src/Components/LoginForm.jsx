@@ -27,6 +27,8 @@ const LoginForm = (props) => {
         setIsLoggedIn(true);
         toast.success("Login Success");
         navigate("/dashboard");
+        console.log("Printing the formData");
+        console.log(formData)
     }
 
     return (
