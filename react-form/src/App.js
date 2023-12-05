@@ -79,7 +79,7 @@ function App() {
         <br/>
 
         <textarea
-         placeholder="Enter Your email address"
+         placeholder="Enter Your comments"
          onChange={changeHandler}
          name="comments"
          value={formData.comments}
