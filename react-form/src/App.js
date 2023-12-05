@@ -58,7 +58,7 @@ function App() {
 
         <input 
         type="text" 
-        placeholder="first name"
+        placeholder="Last name"
         onChange={changeHandler}
         name="lastName"
         value={formData.lastName}
