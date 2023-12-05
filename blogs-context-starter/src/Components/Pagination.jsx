@@ -6,7 +6,7 @@ const Pagination = () => {
   const { page, handlerPageChange, totalPages } = useContext(AppContext)
 
   return (
-    <div className='class="fixed bottom-0 inset-x-0 bg-white py-2 border-t-2 border-t-gray-300 w-full'>
+    <div className='fixed bottom-0 inset-x-0 bg-white py-2 border-t-2 border-t-gray-300 w-full'>
       <div className='flex items-center gap-x-3 w-11/12 max-w-2xl mx-auto'>
         {
           page > 1 &&
